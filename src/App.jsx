@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage"
 import OpenCoursePage from "./components/Course/OpenCoursePage"
 import NotfoundPage from "./pages/NotfoundPage"
 import LoginPage from "./pages/LoginPage"
+import CourseCard from "./layout/Main/CourseCard/CourseCard"
 
 const App = () => {
   return (
@@ -14,11 +15,12 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="course" element={<CoursePage />} />
-          <Route path="course/course-open" element={<OpenCoursePage />} />
-          <Route path="course-open" element={<OpenCoursePage />} />
+          <Route path="/course" element={<CoursePage />} />
+          <Route path="/course/course-open" element={<OpenCoursePage />} />
+          <Route path="/course-open" element={<OpenCoursePage />} />
           <Route path="*" element={<NotfoundPage />} />
-          <Route path="login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/coursecard" element={<CourseCard />} />
 
 
         </Routes>
